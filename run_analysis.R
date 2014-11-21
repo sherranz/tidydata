@@ -88,7 +88,3 @@ named<-function(x){
 }
 
 
-
-
-data<-go()
-data
