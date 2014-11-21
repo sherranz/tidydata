@@ -29,8 +29,7 @@ go<-function(){
   ##subseting only mean() and std()
   goodcols<-grep("(mean\\(\\))|(std\\(\\))", headers[,2])
   goodcolsnames<-headers$V2[goodcols]
-##as.array(goodcolsnames)
-##return(headers)
+
   ##reading data train
   file<-paste(dir, trainX, sep="")
   datatrain<-read.table(file, header = FALSE, col.names = headers[,2], colClasses = rep("numeric", 561))
